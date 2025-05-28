@@ -1,46 +1,58 @@
-# Bevel Gearbox CAD Models
+# Autonomous Path-Tracking Robot Simulink Models
 
-![SolidWorks Version](https://img.shields.io/badge/SolidWorks-2023-blue)
+![Simulink Version](https://img.shields.io/badge/Simulink-2023a-blue)
 
-Complete CAD package for a bevel gearbox system. All files synchronized in the latest update.
+**Complete Simulink modeling and control system package for the Autonomous Path-Tracking Robot project. Includes both open-loop and PID-controlled configurations.**
+
+---
 
 ## 🚀 Quick Start
-1. **Download Bevel-Gearbox.zip**
-2. Extract the archive
-3. Open `Gear box assembly` in SolidWorks
 
-## 📂 File Contents
-| Folder       | Contents                          |
-|--------------|-----------------------------------|
-| `Assembly`  | Main gearbox assembly             |
-| `Casing`    | Housing and enclosure components  |
-| `Gears`     | Pinion and driven gear            |
-| `Shafts`    | Input/output shafts               |
-| `Keys`      | Shaft key components              |
-| `Caps`      | End caps and covers               |
-| `Gaskets`   | Sealing gaskets                   |
-| `Oil`       | Lubrication components            |
-| `Sealing`   | Additional seals                  |
-| `Drawing`   | 2D technical drawings (DWG)       |
+1. **Download the `Simulink model` folder**
+2. Open `Modeling.slx` in MATLAB Simulink
+3. **Important**: Before running any simulation, open and execute `Modeling_constants.m`
+
+---
 
 ## ⚠️ Important Notes
-- **Requirements**: SolidWorks 2023 or compatible
-- **All files updated**: 4 minutes ago
-- **ZIP file contains**: Complete working assembly with all references
-- **For collaborators**: Edit individual components before updating assemblies
+
+- **Requirements**: MATLAB & Simulink 2022b or compatible version
+- **You MUST run `Modeling_constants.m` first** to initialize all model constants
+- Edit the motor-specific constants inside `Modeling_constants.m` to match your hardware:
+  - `Ra` — Armature resistance
+  - `La` — Armature inductance
+  - `Km`, `Kb` — Torque and back EMF constants
+  - `Jm`, `Jw` — Moment of inertia (motor/wheel)
+  - `m`, `r`, `M` — Friction coefficient, wheel radius, robot mass
+
+---
+
+## 🧩 Folder Contents
+
+| File Name               | Description                                 |
+|-------------------------|---------------------------------------------|
+| `main_model.slx`        | Full Simulink system with PID integration   |
+| `Modeling_constants.m`  | Initializes model constants & parameters    |
+
+
+---
 
 ## 🛠️ Troubleshooting
-If files appear missing:
-1. Always use the `Bevel-Gearbox.zip` package
-2. In SolidWorks: Tools > Find References
-3. Ensure all subfolders are in the same directory
+
+If simulation fails or blocks show errors:
+1. Ensure you've executed `Modeling_constants.m` in the MATLAB workspace
+2. Check all paths are set correctly
+3. Make sure all files are in the **same folder**
+
+---
 
 ## 📄 License
-[![License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
-Free for educational and non-commercial use. For commercial applications, please contact the author.
+
+[![License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)  
+Free for educational and academic use. Contact the authors for commercial licensing.
 
 ---
 
 <div align="center">
-  <i>Developed with ❤️ by Team 21 | Alexandria University | Mechanical Design II - Spring 2025</i>
+  <i>Developed with ❤️ by Team كله تحت الكنترول | Alexandria University | Automatic Control - Spring 2025</i>
 </div>
