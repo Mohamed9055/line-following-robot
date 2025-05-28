@@ -79,7 +79,7 @@ line-following-robot
 │ ├── Modeling.slx
 │ └── Modeling_constants.m
 ├── Documentation
-│ └── Design Report.pdf
+│ └── Control Report.pdf
 └── README.md
 ```
 
