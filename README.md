@@ -129,5 +129,5 @@ Free for educational and non-commercial use. Contact the authors for other purpo
 ---
 
 <div align="center">
-  <i>Developed with ❤️ by Team كله تحت الكنترول | Alexandria University | Mechanical Design - Spring 2025</i>
+  <i>Developed with ❤️ by Team كله تحت الكنترول | Alexandria University | Automatic control - Spring 2025</i>
 </div>
