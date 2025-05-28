@@ -70,7 +70,7 @@ This project documents the design, modeling, and control of an autonomous robot 
 ## 📂 Repository Structure
 
 ```
-Path-Tracking-Robot
+line-following-robot
 ├── CAD
 │ └── Cad model.ZIP
 ├── Arduino Code
